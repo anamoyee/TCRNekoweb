@@ -25,9 +25,21 @@ h1, h2, h3{
   text-shadow: black 3px 3px;
 }
 
-p{
+h1#titleh1{
+  font-size: 50px;
+}
+
+h1#titleh1::first-letter{
+  text-shadow: none;
+}
+
+p, .text, .text *{
   text-shadow: black 2px 2px;
   text-align: justify;
+}
+
+.content-div{
+  min-height: 40vh;
 }
 
 header{
@@ -44,4 +56,17 @@ header > img {
   max-height: 150px;
   max-width: 150px;
   flex-grow: 2;
+}
+
+hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img#fumo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+  width: 13vw;
 }

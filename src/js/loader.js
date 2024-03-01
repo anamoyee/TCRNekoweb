@@ -15,4 +15,3 @@ function onJQuery() {
   load('navbar');
   load('footer');
 }
-
