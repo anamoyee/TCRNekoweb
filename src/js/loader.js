@@ -7,7 +7,12 @@ if (typeof jQuery === 'undefined') {
   document.head.appendChild(script);
 }
 
+function load(thing){
+  $(`#${thing}`)?.load(`/src/html/utils/${thing}.html`);
+}
+
 function onJQuery() {
-  $("#navbar")?.load("/src/html/utils/navbar.html");
+  load('navbar');
+  load('footer');
 }
 
