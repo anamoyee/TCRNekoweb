@@ -1,0 +1,45 @@
+@import url(/style/rainbow.css);
+@import url(/style/grid.css);
+@import url(/style/fonts.css);
+
+*{
+  margin: 0;
+  font-family: Roboto;
+  box-sizing: border-box;
+}
+
+html{
+  color-scheme: dark;
+}
+
+/*iframe, nav{
+  width: 100%;
+  border: 10px red solid;
+}/* debug */
+
+h1, h2, h3{
+  margin: 10px;
+  text-align: center;
+  text-shadow: black 3px 3px;
+}
+
+p{
+  text-shadow: black 2px 2px;
+  text-align: justify;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  flex-grow: 5;
+}
+
+header > img {
+  max-height: 150px;
+  max-width: 150px;
+  flex-grow: 2;
+}
