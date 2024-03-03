@@ -5,6 +5,14 @@
 @import url(/style/shake.css);
 @import url(/style/simple_layout.css);
 
+:root{
+  --color-primary: rgb(40,80,120);
+  --color-secondary: rgb(0, 0, 68);
+  --color-link: rgb(d0adf0)
+
+  --content-min-height: 750px
+}
+
 *{
   margin: 0;
   font-family: Roboto;
@@ -20,17 +28,10 @@ html{
   color-scheme: dark;
 }
 
-/*iframe, nav{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 100%;
-  border: 10px red solid;
-}/* debug */
-
 h1, h2, h3{
   margin: 10px;
   text-align: center;
-  text-shadow: black 3px 3px;
+  text-shadow: var(--color-secondary) 3px 3px;
 }
 
 h1#titleh1{
@@ -39,12 +40,12 @@ h1#titleh1{
 }
 
 p, .text, .text *{
-  text-shadow: black 2px 2px;
+  text-shadow: var(--color-secondary) 2px 2px;
   text-align: justify;
 }
 
 .content-div{
-  min-height: 750px;
+  min-height: var(--content-min-height);
 }
 
 header{

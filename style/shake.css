@@ -1,18 +1,20 @@
-.shake {
-   transform: scale(0.9);
-}
 .shake:hover {
    animation: shakeanimation 0.2s;
    animation-iteration-count: infinite;
 }
-.shake:active, .hell {
+
+.shake:active {
    animation: shakeanimation2 0.1s !important;
    animation-iteration-count: infinite !important;
-   filter: saturate(500%) blur(1.2px) !important;
+   filter: saturate(300%) blur(1.2px) !important;
+}
+
+.nodrag{
+   /* Usuwa wyświetlanie się podglądu przeciąganego zdjęcia */
    user-select: none;
    -webkit-user-select: none;
   -webkit-user-drag: none;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -moz-user-drag: none;
   -moz-user-select: none;
 }
@@ -30,6 +32,7 @@
    90% { transform: translate(1px, 2px) rotate(0deg); }
    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
 @keyframes shakeanimation2 {
    0% { transform: scale(1.2) translate(4px, 2px) rotate(0deg); }
    10% { transform: scale(1.2) translate(-4px, -4px) rotate(-3deg); }

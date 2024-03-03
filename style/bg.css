@@ -15,7 +15,7 @@
 } */
 
 .gradientbg{
-  background: linear-gradient(190deg, rgb(40,80,120) 0%, rgb(0,0,39) 100%); /* */
+  background: linear-gradient(190deg, var(--color-primary) 0%, var(--color-secondary) 100%); /* */
   background-attachment: fixed;
   background-size: cover;
 }

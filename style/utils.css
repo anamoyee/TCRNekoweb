@@ -3,5 +3,9 @@
 }
 
 .grower:hover {
-  transform: scale(1.05); /* Increase size by 5% */
+  transform: scale(1.05);
+}
+
+.grower:active {
+  transform: scale(1.075);
 }
