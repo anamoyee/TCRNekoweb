@@ -11,14 +11,14 @@
 }
 
 
-.grower-x {
+.grower-link {
   transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.grower-x:hover {
+.grower-link:hover {
   transform: scaleX(1.075);
 }
 
-.grower-x:active {
+.grower-link:active {
   transform: scale(0.9) scaleX(1);
 }
