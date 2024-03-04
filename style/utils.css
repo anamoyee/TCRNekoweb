@@ -7,9 +7,10 @@
 }
 
 .grower:active {
-  transform: scale(1.075);
+  transform: scale(1.03);
+  opacity: 0.93;
+  transition: opacity 0.07s ease;
 }
-
 
 .grower-link {
   transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
