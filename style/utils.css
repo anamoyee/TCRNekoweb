@@ -1,6 +1,8 @@
-.grower{
+.grower, .grower-link, .grower-small, .grower-x-small{
   transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+
 
 .grower:hover {
   transform: scale(1.05);
@@ -12,14 +14,36 @@
   transition: opacity 0.07s ease;
 }
 
-.grower-link {
-  transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
+
 
 .grower-link:hover {
   transform: scaleX(1.075);
 }
 
-.grower-link:active {
+.grower-link:active:not(.grower-noshrink) {
   transform: scale(0.9) scaleX(1);
+}
+
+
+
+.grower-small:hover {
+  transform: scale(1.025);
+}
+
+.grower-small:active:not(.grower-noshrink) {
+  transform: scale(1.015);
+  opacity: 0.93;
+  transition: opacity 0.07s ease;
+}
+
+
+
+.grower-x-small:hover {
+  transform: scale(1.0125);
+}
+
+.grower-x-small:active:not(.grower-noshrink) {
+  transform: scale(1.0075);
+  opacity: 0.93;
+  transition: opacity 0.07s ease;
 }

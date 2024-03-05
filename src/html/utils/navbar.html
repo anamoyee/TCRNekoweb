@@ -6,10 +6,16 @@
   <link rel="stylesheet" href="/style/style.css">
   <title>Navbar</title>
   <style>
+    div:has(.navdiv){
+      padding: 5px
+    }
+
     .navdiv {
       display: flex;
       justify-content: center;
-      gap: 20px
+      gap: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .navdiv a{
@@ -21,12 +27,14 @@
   </style>
 </head>
 <body>
-  <div class="navdiv">
-    <a class="grower-link" href="/">Strona Główna</a>
-    <a class="grower-link" href="/src/html/pages/gallery.html">Galeria</a>
-    <a class="grower-link" href="/src/html/pages/scratch_test.html">Test</a>
-    <a class="grower-link" href="/src/html/pages/scratch_test.html">Test</a>
-    <a class="grower-link" href="/src/html/pages/scratch_test.html">Te st</a>
+  <div>
+    <div class="navdiv simple-layout-item grower-x-small grower-noshrink">
+      <a class="grower-link" href="/">Strona Główna</a>
+      <a class="grower-link" href="/src/html/pages/gallery.html">Galeria</a>
+      <a class="grower-link" href="/src/html/pages/scratch_test.html">Test</a>
+      <a class="grower-link" href="/src/html/pages/scratch_test.html">Test</a>
+      <a class="grower-link" href="/src/html/pages/scratch_test.html">Test</a>
+    </div>
   </div>
 </body>
 </html>
