@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strona Główna</title>
-  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="style/style.css">
   <style>
     h1#titleh1::first-letter{
       text-shadow: none;
@@ -15,7 +15,7 @@
   <div class="gradientbg">
     <div class="footer-positioner">
       <div class="content-div"> <!-- content -->
-      <nav id="navbar"></nav>
+      <script src="src/js/navbar.js"></script>
       <div class="content-grid">
         <h1 id="titleh1">👋 Hai</h1> <!-- Pierwsza 'litera' to emoji, więc trzeba usunąć shadow, ale tylko na tej podstronie -->
           <h2>Programowanie: &nbsp;Moje hobby</h2>
@@ -25,13 +25,13 @@
                   <h3>Moje ulubione języki</h3>
                   <div class="simple-layout">
                     <div><div class="grower">
-                      <img class="nodrag" src="/assets/img/langs/python.png" alt="Python" width="100%" style="padding: 4%">
+                      <img class="nodrag" src="assets/img/langs/python.png" alt="Python" width="100%" style="padding: 4%">
                     </div></div>
                     <div><div class="grower">
-                      <img class="nodrag" src="/assets/img/langs/rust.png" alt="Rust" width="100%"">
+                      <img class="nodrag" src="assets/img/langs/rust.png" alt="Rust" width="100%"">
                     </div></div>
                     <div><div class="grower">
-                      <img class="nodrag" src="/assets/img/langs/bf.png" alt="BF" width="100%">
+                      <img class="nodrag" src="assets/img/langs/bf.png" alt="BF" width="100%">
                     </div></div>
                   </div>
                 </div>
@@ -113,10 +113,10 @@
           <p>Text</p>
         </div>
       </div>
-      <footer id="footer"></footer>
+      <footer id="footer"><script src="src/js/footer.js"></script></footer>
     </div>
   </div>
-  <img src="/assets/img/fumo.png" alt="GDColon Fumo" id="fumo" class="shake nodrag">
-  <script src="/src/js/loader.js"></script>
+  <img src="assets/img/fumo.png" alt="GDColon Fumo" id="fumo" class="shake nodrag">
+  <script src="src/js/loader.js"></script>
 </body>
 </html>

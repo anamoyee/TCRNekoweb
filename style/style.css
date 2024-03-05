@@ -1,9 +1,11 @@
-@import url(/style/bg.css);
-@import url(/style/grid.css);
-@import url(/style/fonts.css);
-@import url(/style/utils.css);
-@import url(/style/shake.css);
-@import url(/style/simple_layout.css);
+@import url(bg.css);
+@import url(grid.css);
+@import url(fonts.css);
+@import url(utils.css);
+@import url(shake.css);
+@import url(simple_layout.css);
+@import url(utils/navbar.css);
+@import url(utils/footer.css);
 
 :root{
   --color-primary: rgb(40,80,120);
