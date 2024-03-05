@@ -3,6 +3,7 @@
 @import url(fonts.css);
 @import url(utils.css);
 @import url(shake.css);
+@import url(print.css);
 @import url(simple_layout.css);
 @import url(utils/navbar.css);
 @import url(utils/footer.css);
