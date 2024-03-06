@@ -9,8 +9,8 @@
     {text: "tails/senko/basil/θωθ/•ᴗ•/(*´꒳`*)"},
     {text: "Close your eyes you'll be here soon* 一 二 三 四 五分; 時々 本当に寝たい でも このワードできない おやすみ; おやすみ; おやすみ ;おやすみ"},
     {text: "<code style='font-family: monospace'>let yωz = f(y, z) = {x: x ∈ (y∩z) ⋀ x = -1}</code>"},
-    {text: "Sometimes you have the only winning move is not to play"},
-    {text: "10.03.2021 △△△"},
+    {text: "Sometimes the only winning move is not to play"},
+    {text: "10.03.2021 <span style='font-style: normal;'>△△△</span>"},
     {text: "We must know, we will know", author: "David Hilbert"},
     {text: "They say you die twice. First when you stop breathing, and second, a bit later on, when somebody says your name for the last time"},
     {text: "🎃 31 OCT = 25 DEC 🎅"},
@@ -29,19 +29,29 @@
     {text: "Privacy is dead enough. We shan't make it more dead that it currently is."},
   ]
 
-  let h3 = document.createElement("h3");
+  let text_span = document.createElement("span");
 
   // h3.style.fontStyle = "italic";
-  h3.style.opacity = .7;
+  text_span.style.opacity = .7;
+  text_span.style.textAlign = 'center';
+  text_span.style.fontSize = '25px';
+  text_span.style.width = '100%';
+  text_span.className = "text grower-small";
+  text_span.id = 'quotespan';
 
-  q = choice(quote_pool)
+  q = choice(quote_pool);
 
   if (q.author){
-    h3.innerHTML = `"<i>${q.text}</i>" ~ ${q.author}`
+    text_span.innerHTML = `"<i>${q.text}</i>" ~ ${q.author}`;
   } else {
-    h3.innerHTML = `"<i>${q.text}</i>"`
+    text_span.innerHTML = `"<i>${q.text}</i>"`;
   }
 
+  let div = document.createElement("div");
+  div.appendChild(text_span);
+  div.className = 'full-width';
+  div.style.width = '100%';
+
   let script = document.currentScript;
-  script.parentNode.replaceChild(h3, script);
+  script.parentNode.replaceChild(div, script);
 }
