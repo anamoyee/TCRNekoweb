@@ -10,14 +10,32 @@ footer_div.id = "outerfooterdiv";
 let footer_script = document.currentScript;
 footer_script.parentNode.replaceChild(footer_div, footer_script);
 
-if (window.location.host == 'nekoweb.org'){
-  const username = 'irc';
-  var views = fetch(`https://nekoweb.org/api/site/info/${username}`).json().views;
-} else {
-  var suffix = " (nie na nekoweb.org)"
-  var views = "Nie udało się odczytać liczby"
+const subdomain = window.location.hostname.split('.')[0];
+
+let suffix;
+let views;
+
+async function getViews(username){
+    const request = await fetch(`https://nekoweb.org/api/site/info/${username}`);
+    const json = await request.json();
+    return json.views;
 }
 
-views ??= "Nie udało się odczytać liczby"
+(async () => {
+  if (subdomain && window.location.host.endsWith('nekoweb.org')){
+    views = await getViews(subdomain);
+  } else if (!subdomain){
+    suffix = ` (invalid subdomain: '${subdomain}')`
+    views = null
+  } else {
+    suffix = " (nie na nekoweb.org)"
+    views = null
+  }
 
-footer_span.innerText = `© Copyright Kamil Gondek ZSE 2024-present ⋅ ${views} Odwiedzających${suffix ?? ""}`;
+  views ??= "Nie udało się odczytać liczby";
+
+  footer_span.innerText = `© Copyright Kamil Gondek ZSE 2024-present ⋅ ${views} Odwiedzających${suffix ?? ""}`;
+})();
+
+
+
