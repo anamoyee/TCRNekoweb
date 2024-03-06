@@ -5,7 +5,7 @@ navbar_div1.appendChild(navbar_div)
 
 const navbar_links = [
   ["Strona Główna", "index.html"],
-  ["Galeria", "src/html/pages/gallery.html"],
+  ["Galeria", "src/html/gallery.html"],
   ["Test", "src/html/pages/test.html"],
   ["Test", "src/html/pages/test.html"],
   ["Test", "src/html/pages/test.html"],
@@ -19,7 +19,7 @@ navbar_links.forEach(page => {
   navbar_div.appendChild(navbar_a);
 })
 
-navbar_div.className = "navdiv simple-layout-item grower-x-small grower-noshrink";
+navbar_div.className = "navdiv simple-layout-item"; // + "grower-x-small grower-noshrink"
 navbar_div.style.display = "flex";
 navbar_div.style.flexWrap = "wrap";
 

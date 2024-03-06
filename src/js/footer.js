@@ -14,10 +14,10 @@ if (window.location.host == 'nekoweb.org'){
   const username = 'irc';
   var views = fetch(`https://nekoweb.org/api/site/info/${username}`).json().views;
 } else {
-  var suffix = " (nie na nekoweb.org - nie można pobierac liczb odwiedzających)"
+  var suffix = " (nie na nekoweb.org)"
   var views = "Nie udało się odczytać liczby"
 }
 
 views ??= "Nie udało się odczytać liczby"
 
-footer_span.innerText = `© Copyright Kamil Gondek 2024-present ⋅ ${views} Odwiedzających${suffix ?? ""}`;
+footer_span.innerText = `© Copyright Kamil Gondek ZSE 2024-present ⋅ ${views} Odwiedzających${suffix ?? ""}`;

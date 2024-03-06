@@ -17,6 +17,7 @@
   margin-bottom: var(--simple-layout-gap);
   padding-left: 3%;
   padding-right: 3%;
+  break-inside: avoid-page; /* Nie ucinaj elementów na inne strony podczas drukowania */
 }
 
 .sl-padding{

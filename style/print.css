@@ -1,0 +1,29 @@
+@media print {
+  /* Reset styles to default layout for printing */
+  .simple-layout:not(.simple-layout .simple-layout) {
+    flex-direction: row;
+  }
+
+  .simple-layout:not(.simple-layout .simple-layout) > div {
+    width: initial;
+  }
+
+  body{
+    filter: grayscale(100%) /* W celu zapobiegnięcia marnowania kolorowego tuszu do drukowania */
+  }
+
+  .grower:hover,
+  .grower:active,
+  .grower-small:hover,
+  .grower-small:active,
+  .grower-x-small:hover,
+  .grower-x-small:active,
+  .grower-link:hover,
+  .grower-link:active{
+    transform: none !important; /* Usuwa efekty najechania kursorem lub klikniecia podczas drukowania */
+  }
+
+  #fumo{
+    display: none; /* Usuwa fumo z dolnego-prawego rogu */
+  }
+}

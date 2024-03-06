@@ -3,12 +3,3 @@ if (typeof jQuery === 'undefined') {
   script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
   document.head.appendChild(script);
 }
-
-window.onload = async function(){
-  
-
-  // document.getElementById('visitorsCount').innerHTML = views
-}
-
-
-
