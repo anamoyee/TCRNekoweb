@@ -35,6 +35,19 @@
   background-color: rgba(255, 255, 255, .1);
 }
 
+.simple-image-item{
+  background-color: rgba(255, 255, 255, .1);
+  border: 3px var(--color-secondary) solid;
+  border-radius: min(2vh, 15px);
+  overflow: hidden;
+}
+
+.simple-image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media screen and (max-width: 1000px), (orientation: portrait) {
   .simple-layout:not(.simple-layout .simple-layout) {
     flex-direction: column;
