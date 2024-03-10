@@ -6,6 +6,10 @@
 - [ ] strona muzyczna: jakis anime op albo pokemon ? albo unwelcome school ? albo random?
   - autoplay
 
+### Pages
+- [ ] programming memes
+- [ ] code snippets
+
 # Before turn-in
 
 - [ ] VALIDATOR

@@ -79,3 +79,10 @@ img#fumo{
   margin: 10px;
   width: 13vw;
 }
+
+.gradientbg,
+.footer-positioner,
+.content-div{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

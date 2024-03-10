@@ -22,11 +22,8 @@ async function getViews(username){
 }
 
 (async () => {
-  if (subdomain && window.location.host.endsWith('nekoweb.org')){
+  if (window.location.host.endsWith('nekoweb.org')){
     views = await getViews(subdomain);
-  } else if (!subdomain){
-    suffix = ` (invalid subdomain: '${subdomain}')`
-    views = null
   } else {
     suffix = " (nie na nekoweb.org)"
     views = null

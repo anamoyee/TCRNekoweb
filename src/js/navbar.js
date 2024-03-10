@@ -45,6 +45,7 @@
     div.style.display = "flex";
     div.style.flexWrap = "wrap";
     div.style.flexGrow = "1";
+    div.style.flexShrink = "100";
 
     outer_div.appendChild(div);
   }
