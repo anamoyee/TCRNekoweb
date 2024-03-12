@@ -15,7 +15,7 @@
     div.className = "simple-image-item grower";
 
     let img = document.createElement("img");
-    img.src = 'assets/img/tails.png';
+    img.src = '/assets/img/tails.png';
     img.style.width = '100px';
     div.appendChild(img)
 
@@ -26,11 +26,11 @@
     let div = document.createElement("div");
 
     const navbar_links = [
-      ["Strona Główna", "index.html"],
-      ["Galeria", "src/html/gallery.html"],
-      ["Test", "src/html/pages/test.html"],
-      ["Test", "src/html/pages/test.html"],
-      ["Test", "src/html/pages/test.html"],
+      ["Strona Główna", "/"],
+      ["Galeria", "/-/gallery"],
+      ["Materiały", "/-/materialy"],
+      ["Test", "/-/test.html"],
+      ["Test", "/-/test.html"],
     ]
 
     navbar_links.forEach(page => {
@@ -56,13 +56,14 @@
     div.className = "simple-image-item grower";
 
     let img = document.createElement("img");
-    img.src = 'assets/img/tails2.png';
+    img.src = '/assets/img/tails2.png';
     img.style.width = '100px';
     img.style.height = '100px';
     div.appendChild(img)
-
     outer_div.appendChild(div)
   }
+
+  outer_div.style.paddingRight = '10px'
 
   const script = document.currentScript;
   script.parentNode.replaceChild(outer_div, script);

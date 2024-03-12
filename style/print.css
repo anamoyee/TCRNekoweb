@@ -26,4 +26,20 @@
   #fumo{
     display: none; /* Usuwa fumo z dolnego-prawego rogu */
   }
+
+  .rainbowbg, .gradientbg{
+    visibility: none;
+  }
+
+  html{
+    color-scheme: light;
+  }
+/* 
+  *{
+    background-color: white;
+  } */
+
+  p, .text, .text *{
+    color: black !important;
+  }
 }

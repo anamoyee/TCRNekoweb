@@ -1,12 +1,12 @@
-@import url(bg.css);
-@import url(grid.css);
-@import url(fonts.css);
-@import url(utils.css);
-@import url(shake.css);
-@import url(print.css);
-@import url(simple_layout.css);
-@import url(utils/navbar.css);
-@import url(utils/footer.css);
+@import url(/style/bg.css);
+@import url(/style/grid.css);
+@import url(/style/fonts.css);
+@import url(/style/utils.css);
+@import url(/style/shake.css);
+@import url(/style/print.css);
+@import url(/style/simple_layout.css);
+@import url(/style/utils/navbar.css);
+@import url(/style/utils/footer.css);
 
 :root{
   --color-primary: rgb(40,80,120);
@@ -31,6 +31,14 @@ html{
   color-scheme: dark;
 }
 
+body{
+  position: relative;
+}
+
+code{
+  font-family: "Consolas", monospace
+}
+
 h1, h2, h3{
   margin: 10px;
   text-align: center;
@@ -39,7 +47,7 @@ h1, h2, h3{
 
 h1#titleh1{
   font-size: 50px;
-  min-height: 70px;
+  min-height: 50px;
 }
 
 p, .text, .text *{
@@ -85,4 +93,22 @@ img#fumo{
 .content-div{
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.opacity10{
+  opacity: 0.1;
+}
+
+*:has(.notakeupspace){
+  position: relative;
+}
+
+.notakeupspace{
+  position: absolute;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.todo{
+  background-color: #ff8000;
 }

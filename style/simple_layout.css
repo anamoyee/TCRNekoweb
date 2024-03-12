@@ -13,11 +13,17 @@
   width: 100%;
 }
 
-.simple-layout > div > div {
+.simple-layout > div > div,
+.simple-layout > div > a > div {
   margin-bottom: var(--simple-layout-gap);
   padding-left: 3%;
   padding-right: 3%;
   break-inside: avoid-page; /* Nie ucinaj elementów na inne strony podczas drukowania */
+}
+
+.simple-layout > div > a:has(div) {
+  text-decoration: none;
+  color: inherit;
 }
 
 .sl-padding{
@@ -26,6 +32,7 @@
 }
 
 .simple-layout:not(.sl-invisible) > div > div,
+.simple-layout:not(.sl-invisible) > div > a > div,
 .simple-layout-item
 {
   border-radius: min(2vh, 15px);

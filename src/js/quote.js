@@ -1,17 +1,19 @@
 {
   let script = document.currentScript;
+  let q;
+  let previousQuote;
+
+  function choice(array) {
+    const randomIndex = Math.floor(Math.random() * array.length);
+    return array[randomIndex];
+  }
 
   (function reroll(p) {
-    function choice(array) {
-      const randomIndex = Math.floor(Math.random() * array.length);
-      return array[randomIndex];
-    }
-
     const quote_pool = [
       {text: "<a style='text-decoration: none; text-shadow: none;' href='https://irc.nekoweb.org'>https://irc.nekoweb.org</a> Internet Relay cat :3"},
       {text: "tails/senko/basil/θωθ/•ᴗ•/(*´꒳`*)"},
       {text: "Close your eyes you'll be here soon* 一 二 三 四 五分; 時々 本当に寝たい でも このワードできない おやすみ; おやすみ; おやすみ ;おやすみ"},
-      {text: "<code style='font-family: monospace'>let yωz = f(y, z) = {x: x ∈ (y∩z) ⋀ x = -1}</code>"},
+      {text: "<code>let yωz = f(y, z) = {x: x ∈ (y∩z) ⋀ x = -1}</code>"},
       {text: "Sometimes the only winning move is not to play"},
       {text: "10.03.2021 <span style='font-style: normal;'>△△△</span>"},
       {text: "We must know, we will know", author: "David Hilbert"},
@@ -19,7 +21,7 @@
       {text: "🎃 31 OCT = 25 DEC 🎅"},
       {text: "Why worry about anything else when you can have one thing  f o r e v e r"},
       {text: "Access is Power"},
-      {text: "<code style='font-family: monospace'>\\frac{d❤️}{dt} = a💜\\n\\frac{d💜️}{dt} = -b❤️</code>"},
+      {text: "<code>\\frac{d❤️}{dt} = a💜<br>\\frac{d💜️}{dt} = -b❤️</code>"},
       {text: "A little bit of an, uh, incident"},
       {text: "Hi! I'm a Python programmer and I like wreaking havoc on school computers :3", author: "Totally not me"},
       {text: "The only true safe house in minecraft is a hidden one", author: "Mumbo Jumbo"},
@@ -42,7 +44,11 @@
     text_span.className = "text grower-link";
     text_span.id = 'quotespan';
 
-    q = choice(quote_pool);
+    do {
+      q = choice(quote_pool);
+    } while (q === previousQuote);
+
+    previousQuote = q;
 
     if (q.author){
       text_span.innerHTML = `"<i>${q.text}</i> " ~ ${q.author}`;
