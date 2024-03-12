@@ -5,6 +5,7 @@
 - [ ] strona wideo: pep8
 - [ ] strona muzyczna: jakis anime op albo pokemon ? albo unwelcome school ? albo random?
   - autoplay
+- [ ] favicon
 
 ### Pages
 - [ ] programming memes
