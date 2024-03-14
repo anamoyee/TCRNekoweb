@@ -46,8 +46,11 @@ h1, h2, h3{
   text-shadow: var(--color-secondary) 3px 3px;
 }
 
-h1#titleh1{
-  font-size: 50px;
+#titleimg{
+  width: 90%;
+  display: block;
+  margin: auto auto;
+  box-sizing: border-box;
   min-height: 50px;
 }
 
@@ -56,7 +59,7 @@ p, .text, .text *{
   text-align: justify;
 }
 
-.content-div{
+main{
   min-height: var(--content-min-height);
 }
 
@@ -91,7 +94,7 @@ img#fumo{
 
 .gradientbg,
 .footer-positioner,
-.content-div{
+main{
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
