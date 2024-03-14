@@ -6,6 +6,7 @@
 - [ ] strona muzyczna: jakis anime op albo pokemon ? albo unwelcome school ? albo random?
   - autoplay
 - [ ] favicon
+- [ ] fix #titleh1 since it's now broken by the #titleimg
 
 ### Pages
 - [ ] programming memes
