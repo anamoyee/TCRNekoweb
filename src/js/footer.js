@@ -5,11 +5,17 @@
 
   let footer = document.createElement("footer");
   footer.appendChild(footer_span);
-  footer.className = "simple-layout-item grower-x-small";
+  footer.className = "simple-layout-item grower-x-small full-width";
   footer.id = "outerfooterdiv";
 
+  let footer_outer_outer_div = document.createElement("div");
+  footer_outer_outer_div.appendChild(footer);
+
+  footer_outer_outer_div.style.marginLeft = '15px';
+  footer_outer_outer_div.style.marginRight = '15px';
+
   let footer_script = document.currentScript;
-  footer_script.parentNode.replaceChild(footer, footer_script);
+  footer_script.parentNode.replaceChild(footer_outer_outer_div, footer_script);
 
   const subdomain = window.location.hostname.split('.')[0];
 

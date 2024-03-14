@@ -14,17 +14,22 @@
   animation: rainbow var(--czas) ease infinite;
 } */
 
-.gradientbg, .gradientbg2{
+.gradientbg, .gradientbg2, .gradientbg3{
   background: linear-gradient(190deg, var(--color-primary) 0%, var(--color-secondary) 100%); /* */
   background-attachment: fixed;
   background-size: cover;
 }
 
 .gradientbg2{
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -99999999999999999999999999;
+}
+
+.gradientbg3{
   position: fixed;
-  background: linear-gradient(190deg, var(--color-primary) 0%, var(--color-secondary) 100%); /* */
-  background-attachment: fixed;
-  background-size: cover;
   bottom: 0;
   top: 0;
   left: 0;

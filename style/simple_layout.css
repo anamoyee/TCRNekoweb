@@ -13,6 +13,15 @@
   width: 100%;
 }
 
+.simple-layout > div > div:last-child,
+.simple-layout > div > a:last-child > div{
+  margin-bottom: 0;
+}
+
+.simple-layout{
+  margin-bottom: var(--simple-layout-gap);
+}
+
 .simple-layout > div > div,
 .simple-layout > div > a > div {
   margin-bottom: var(--simple-layout-gap);
@@ -29,6 +38,11 @@
 .sl-padding{
   padding-top: 3%;
   padding-bottom: 3%;
+}
+
+.no-sl-padding{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .simple-layout:not(.sl-invisible) > div > div,

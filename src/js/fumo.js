@@ -8,7 +8,7 @@ console.log(
 $(window).scroll(function() {
   let fumo = $("#fumo");
   const OFFSET_PX = $("footer").innerHeight();
-  const DEFAULT_MARGIN_PX = 10;
+  const DEFAULT_MARGIN_PX = 15;
 
   const scrollDiff = document.body.scrollHeight - window.scrollY - window.innerHeight;
 

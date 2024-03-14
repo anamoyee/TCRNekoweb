@@ -13,10 +13,12 @@
     let div = document.createElement("div");
 
     div.className = "simple-image-item grower";
+    div.id = 'navtails1'
 
     let img = document.createElement("img");
     img.src = '/assets/img/tails.png';
-    img.style.width = '100px';
+    img.style.width = '100px'
+    img.style.height = '100px';
     div.appendChild(img)
 
     outer_div.appendChild(div)
@@ -54,6 +56,7 @@
     let div = document.createElement("div");
 
     div.className = "simple-image-item grower";
+    div.id = 'navtails2'
 
     let img = document.createElement("img");
     img.src = '/assets/img/tails2.png';

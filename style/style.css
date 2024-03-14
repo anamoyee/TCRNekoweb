@@ -4,6 +4,7 @@
 @import url(/style/utils.css);
 @import url(/style/shake.css);
 @import url(/style/print.css);
+@import url(/style/media.css);
 @import url(/style/simple_layout.css);
 @import url(/style/utils/navbar.css);
 @import url(/style/utils/footer.css);
@@ -112,3 +113,4 @@ img#fumo{
 .todo{
   background-color: #ff8000;
 }
+

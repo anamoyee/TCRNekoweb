@@ -2,6 +2,12 @@
   transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.grower:active:not(.grower-opaque),
+.grower-x-small:active:not(.grower-opaque),
+.grower-small:active:not(.grower-opaque){
+  opacity: 0.93;
+}
+
 
 
 .grower:hover {
@@ -10,9 +16,9 @@
 
 .grower:active {
   transform: scale(1.03);
-  opacity: 0.93;
   transition: opacity 0.07s ease;
 }
+
 
 
 
@@ -32,7 +38,6 @@
 
 .grower-small:active:not(.grower-noshrink) {
   transform: scale(1.015);
-  opacity: 0.93;
   transition: opacity 0.07s ease;
 }
 
