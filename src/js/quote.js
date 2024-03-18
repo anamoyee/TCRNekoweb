@@ -41,7 +41,7 @@
     text_span.style.textAlign = 'center';
     text_span.style.fontSize = '25px';
     text_span.style.width = '100%';
-    text_span.className = "text grower-link";
+    text_span.className = "text grower-link clickable-cursor";
     text_span.id = 'quotespan';
 
     previousPreviousQuote = previousQuote ?? choice(quote_pool);

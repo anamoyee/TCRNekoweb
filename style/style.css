@@ -22,6 +22,11 @@
   font-family: Roboto;
   box-sizing: border-box;
   user-select: none;
+  cursor: url(/assets/img/cursor.png), auto;
+}
+
+a, button, .clickable-cursor, .clickable-cursor *{
+  cursor: pointer;
 }
 
 *::-webkit-scrollbar{
