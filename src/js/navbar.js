@@ -31,7 +31,7 @@
       ["Strona Główna", "/"],
       ["Galeria", "/-/gallery"],
       ["Materiały", "/-/materialy"],
-      ["Test", "/-/test.html"],
+      ["Media", "/-/media.html"],
       ["Test", "/-/test.html"],
     ]
 

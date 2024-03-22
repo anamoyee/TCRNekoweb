@@ -7,11 +7,14 @@
   - autoplay
 - [ ] favicon
 - [ ] fix #titleh1 since it's now broken by the #titleimg
+- [ ] media: omori good morning instrukentak
+- [ ] media: shrek
+- [ ] media: artur maciuk pelen humoru
+- [ ] media: https://youtu.be/gA64971fisI
 
 ### Pages
-- [ ] programming memes
-- [ ] code snippets
-- [ ] Przygotowanie na informatykę cpp
+- [x] programming memes
+- [x] code snippets
 
 # Before turn-in
 
