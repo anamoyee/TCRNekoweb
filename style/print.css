@@ -19,40 +19,44 @@
   .grower-x-small:hover,
   .grower-x-small:active,
   .grower-link:hover,
-  .grower-link:active{
+  .grower-link:active {
     transform: none !important; /* Usuwa efekty najechania kursorem lub klikniecia podczas drukowania */
   }
 
-  #fumo{
+  #fumo {
     display: none; /* Usuwa fumo z dolnego-prawego rogu */
   }
 
-  .rainbowbg, .gradientbg{
+  .rainbowbg,
+  .gradientbg {
     visibility: none;
   }
 
-  html{
+  html {
     color-scheme: light;
   }
 
-  /* p, .text, .text *, h1, h2, h3, h4, h5, h6, */ *{
+  /* p, .text, .text *, h1, h2, h3, h4, h5, h6, */
+  * {
     text-shadow: none !important;
     color: black !important;
   }
 
-  .gradientbg, .gradientbg2, .gradientbg3{
+  .gradientbg,
+  .gradientbg2,
+  .gradientbg3 {
     background: white !important;
   }
 
-  footer{
+  footer {
     margin-top: 15px;
   }
 
-  #smhjustuserecursion{
+  #smhjustuserecursion {
     display: none;
   }
 
-  #smallvscodelogo{
+  #smallvscodelogo {
     display: none;
   }
 }

@@ -1,24 +1,25 @@
 .shake:hover {
-   animation: shakeanimation 0.2s;
-   animation-iteration-count: infinite;
+  animation: shakeanimation 0.2s;
+  animation-iteration-count: infinite;
 }
 
 .shake:active {
-   animation: shakeanimation2 0.1s !important;
-   animation-iteration-count: infinite !important;
-   filter: saturate(300%) blur(1.2px) !important;
+  animation: shakeanimation2 0.1s !important;
+  animation-iteration-count: infinite !important;
+  filter: saturate(300%) blur(1.2px) !important;
 }
 
-.nodrag{
-   /* Usuwa wyświetlanie się podglądu przeciąganego zdjęcia */
-   user-select: none;
-   -webkit-user-select: none;
+.nodrag {
+  /* Usuwa wyświetlanie się przeciąganego zdjęcia */
+  user-select: none;
+  -webkit-user-select: none;
   -webkit-user-drag: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -moz-user-drag: none;
   -moz-user-select: none;
 }
 
+/* prettier-ignore */
 @keyframes shakeanimation {
    0% { transform: translate(1px, 1px) rotate(0deg); }
    10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -33,6 +34,7 @@
    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+/* prettier-ignore */
 @keyframes shakeanimation2 {
    0% { transform: scale(1.2) translate(4px, 2px) rotate(0deg); }
    10% { transform: scale(1.2) translate(-4px, -4px) rotate(-3deg); }
@@ -47,18 +49,16 @@
    100% { transform: scale(1.2) translate(4px, -4px) rotate(-3deg); }
 }
 
-
 #fumo {
-   position: fixed;
-   bottom: 0;
-   right: 0;
-   cursor: pointer;
- }
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
 
- /* When the user is about to scroll to the bottom 20px, change to absolute positioning */
- @media (min-height: (100vh - 20px)) {
-   #fumo {
-     position: absolute;
-     bottom: 20px; /* Adjust as needed */
-   }
- }
+@media (min-height: (100vh - 20px)) {
+  #fumo {
+    position: absolute;
+    bottom: 20px;
+  }
+}

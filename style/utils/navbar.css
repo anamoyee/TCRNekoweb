@@ -1,5 +1,5 @@
-div:has(.navdiv){
-  padding: 5px
+div:has(.navdiv) {
+  padding: 5px;
 }
 
 .navdiv {
@@ -10,7 +10,7 @@ div:has(.navdiv){
   padding-bottom: 20px;
 }
 
-.navdiv a{
+.navdiv a {
   font-weight: bolder;
   text-decoration: none;
   text-shadow: 2px 2px var(--color-secondary);

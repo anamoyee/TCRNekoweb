@@ -1,4 +1,4 @@
-:root{
+:root {
   --simple-layout-gap: 15px;
 }
 
@@ -14,11 +14,11 @@
 }
 
 .simple-layout > div > div:last-child,
-.simple-layout > div > a:last-child > div{
+.simple-layout > div > a:last-child > div {
   margin-bottom: 0;
 }
 
-.simple-layout{
+.simple-layout {
   margin-bottom: var(--simple-layout-gap);
 }
 
@@ -35,29 +35,28 @@
   color: inherit;
 }
 
-.sl-padding{
+.sl-padding {
   padding-top: 3%;
   padding-bottom: 3%;
 }
 
-.no-sl-padding{
+.no-sl-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
 .simple-layout:not(.sl-invisible) > div > div,
 .simple-layout:not(.sl-invisible) > div > a > div,
-.simple-layout-item
-{
+.simple-layout-item {
   border-radius: min(2vh, 15px);
 
   border: var(--color-secondary) 3px solid;
 
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.simple-image-item{
-  background-color: rgba(255, 255, 255, .1);
+.simple-image-item {
+  background-color: rgba(255, 255, 255, 0.1);
   border: 3px var(--color-secondary) solid;
   border-radius: min(2vh, 15px);
   overflow: hidden;

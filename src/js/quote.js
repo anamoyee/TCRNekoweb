@@ -8,6 +8,7 @@
     return array[randomIndex];
   }
 
+  // prettier-ignore
   const quote_pool = [
     {text: "<a style='text-decoration: none; text-shadow: none;' href='https://irc.nekoweb.org'>https://irc.nekoweb.org</a> Internet Relay cat :3"},
     {text: "tails/senko/basil/θωθ/•ᴗ•/(*´꒳`*)"},
@@ -33,21 +34,21 @@
     {text: "Privacy is dead enough. We shan't make it more dead that it currently is."},
   ];
 
-  function setTo(q){
+  function setTo(q) {
     let text_span = document.createElement("span");
 
     // h3.style.fontStyle = "italic";
-    text_span.style.opacity = .7;
-    text_span.style.textAlign = 'center';
-    text_span.style.fontSize = '25px';
-    text_span.style.width = '100%';
+    text_span.style.opacity = 0.7;
+    text_span.style.textAlign = "center";
+    text_span.style.fontSize = "25px";
+    text_span.style.width = "100%";
     text_span.className = "text grower-link clickable-cursor";
-    text_span.id = 'quotespan';
+    text_span.id = "quotespan";
 
     previousPreviousQuote = previousQuote ?? choice(quote_pool);
     previousQuote = q;
 
-    if (q.author){
+    if (q.author) {
       text_span.innerHTML = `"<i>${q.text}</i> " ~ ${q.author}`;
     } else {
       text_span.innerHTML = `"<i>${q.text}</i> "`;
@@ -55,10 +56,10 @@
 
     let div = document.createElement("div");
     div.appendChild(text_span);
-    div.className = 'full-width';
-    div.style.width = '100%';
+    div.className = "full-width";
+    div.style.width = "100%";
     div.onclick = reroll;
-    div.addEventListener("contextmenu", event => {
+    div.addEventListener("contextmenu", (event) => {
       event.preventDefault();
       back();
     });
@@ -69,9 +70,9 @@
 
   function reroll(p) {
     setTo(choice(quote_pool));
-  };
+  }
 
-  function back(){
+  function back() {
     setTo(previousPreviousQuote);
   }
 

@@ -1,3 +1,4 @@
+// prettier-ignore
 console.log(
 `  ／l、
 （ﾟ､ ｡ ７ UwU :3
@@ -5,16 +6,20 @@ console.log(
   じしf_,)ノ`
 );
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   let fumo = $("#fumo");
   const OFFSET_PX = $("footer").innerHeight();
   const DEFAULT_MARGIN_PX = 15;
 
-  const scrollDiff = document.body.scrollHeight - window.scrollY - window.innerHeight;
+  const scrollDiff =
+    document.body.scrollHeight - window.scrollY - window.innerHeight;
 
   if (scrollDiff < OFFSET_PX) {
-    fumo.css("margin-bottom", `${OFFSET_PX - scrollDiff + DEFAULT_MARGIN_PX}px`);
+    fumo.css(
+      "margin-bottom",
+      `${OFFSET_PX - scrollDiff + DEFAULT_MARGIN_PX}px`
+    );
   } else {
-    fumo.css("margin-bottom", '');
+    fumo.css("margin-bottom", "");
   }
 });

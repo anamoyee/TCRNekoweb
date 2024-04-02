@@ -11,34 +11,37 @@
   let footer_outer_outer_div = document.createElement("div");
   footer_outer_outer_div.appendChild(footer);
 
-  footer_outer_outer_div.style.marginLeft = '15px';
-  footer_outer_outer_div.style.marginRight = '15px';
+  footer_outer_outer_div.style.marginLeft = "15px";
+  footer_outer_outer_div.style.marginRight = "15px";
 
   let footer_script = document.currentScript;
   footer_script.parentNode.replaceChild(footer_outer_outer_div, footer_script);
 
-  const subdomain = window.location.hostname.split('.')[0];
+  const subdomain = window.location.hostname.split(".")[0];
 
   let suffix;
   let views;
 
-  async function getViews(username){
-      const request = await fetch(`https://nekoweb.org/api/site/info/${username}`);
-      const json = await request.json();
-      return json.views;
+  async function getViews(username) {
+    const request = await fetch(
+      `https://nekoweb.org/api/site/info/${username}`
+    );
+    const json = await request.json();
+    return json.views;
   }
 
   (async () => {
-    if (window.location.host.endsWith('nekoweb.org')){
+    if (window.location.host.endsWith("nekoweb.org")) {
       views = await getViews(subdomain);
     } else {
-      suffix = " (nie na nekoweb.org)"
-      views = null
+      suffix = " (nie na nekoweb.org)";
+      views = null;
     }
 
     views ??= "Nie udało się odczytać liczby";
 
-    footer_span.innerText = `© Copyright Kamil Gondek ZSE 2024-present ⋅ ${views} Odwiedzających${suffix ?? ""}`;
+    footer_span.innerText = `© Copyright Kamil Gondek ZSE 2024-present ⋅ ${views} Odwiedzających${
+      suffix ?? ""
+    }`;
   })();
 }
-

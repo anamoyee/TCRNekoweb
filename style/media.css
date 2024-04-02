@@ -1,5 +1,6 @@
 @media (max-width: 800px) {
-  #navtails1, #navtails2 {
-      display: none;
+  #navtails1,
+  #navtails2 {
+    display: none;
   }
 }
