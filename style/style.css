@@ -29,6 +29,10 @@ a, button, .clickable-cursor, .clickable-cursor *{
   cursor: pointer;
 }
 
+*:has(a), a{
+  text-decoration: none;
+}
+
 *::-webkit-scrollbar{
   display: none;
 }
@@ -45,7 +49,7 @@ code{
   font-family: "Consolas", monospace
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6{
   margin: 10px;
   text-align: center;
   text-shadow: var(--color-secondary) 3px 3px;
@@ -121,4 +125,3 @@ main{
 .todo{
   background-color: #ff8000;
 }
-

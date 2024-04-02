@@ -52,8 +52,9 @@
    position: fixed;
    bottom: 0;
    right: 0;
+   cursor: pointer;
  }
- 
+
  /* When the user is about to scroll to the bottom 20px, change to absolute positioning */
  @media (min-height: (100vh - 20px)) {
    #fumo {

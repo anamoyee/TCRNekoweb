@@ -28,10 +28,10 @@
     let div = document.createElement("div");
 
     const navbar_links = [
-      ["Strona Główna", "/"],
+      ["Home", "/"],
       ["Galeria", "/-/gallery"],
       ["Materiały", "/-/materialy"],
-      ["Media", "/-/media.html"],
+      ["Media", "/-/media"],
       ["Test", "/-/test.html"],
     ]
 

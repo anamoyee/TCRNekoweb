@@ -8,9 +8,9 @@
     width: initial;
   }
 
-  body{
-    filter: grayscale(100%) /* W celu zapobiegnięcia marnowania kolorowego tuszu do drukowania */
-  }
+  /* body{
+    filter: grayscale(100%)
+  } /* W celu zapobiegnięcia marnowania kolorowego tuszu do drukowania */
 
   .grower:hover,
   .grower:active,
@@ -34,12 +34,25 @@
   html{
     color-scheme: light;
   }
-/* 
-  *{
-    background-color: white;
-  } */
 
-  p, .text, .text *{
+  /* p, .text, .text *, h1, h2, h3, h4, h5, h6, */ *{
+    text-shadow: none !important;
     color: black !important;
+  }
+
+  .gradientbg, .gradientbg2, .gradientbg3{
+    background: white !important;
+  }
+
+  footer{
+    margin-top: 15px;
+  }
+
+  #smhjustuserecursion{
+    display: none;
+  }
+
+  #smallvscodelogo{
+    display: none;
   }
 }

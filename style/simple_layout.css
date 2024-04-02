@@ -78,3 +78,11 @@
     width: auto;
   }
 }
+
+.simple-layout-single-column.simple-layout {
+  flex-direction: column;
+}
+
+.simple-layout-single-column.simple-layout > div {
+  width: auto;
+}
