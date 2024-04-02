@@ -1,4 +1,4 @@
-AUDIO = false;
+AUDIO = true;
 
 if (AUDIO) {
   function choice(array) {
@@ -6,7 +6,12 @@ if (AUDIO) {
     return array[randomIndex];
   }
 
-  links = ["PqQC_gl5k0w", "7GIWV__qx4M"];
+  // prettier-ignore
+  links = [
+    "PqQC_gl5k0w",
+    "7GIWV__qx4M",
+    "atgjKEgSqSU",
+  ];
 
   iframe =
     `<iframe id="autoplayiframe" width="0" height="0" src="https://www.youtube-nocookie.com/embed/` +
