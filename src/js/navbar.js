@@ -32,7 +32,7 @@
       ["Galeria", "/-/gallery"],
       ["Materiały", "/-/materialy"],
       ["Media", "/-/media"],
-      ["Test", "/-/test.html"],
+      ["Newsletter", "/-/form"],
     ];
 
     navbar_links.forEach((page) => {

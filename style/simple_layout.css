@@ -48,7 +48,7 @@
 .simple-layout:not(.sl-invisible) > div > div,
 .simple-layout:not(.sl-invisible) > div > a > div,
 .simple-layout-item {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, .3);
 
   border-radius: min(2vh, 15px);
 

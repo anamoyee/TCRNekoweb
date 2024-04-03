@@ -1,0 +1,38 @@
+/* Only imported within /-/form */
+
+.simple-layout {
+  text-align: center;
+}
+
+.simple-layout > div > div {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.simple-layout > div > div > form > * {
+  margin-bottom: 10px;
+}
+
+button {
+  width: 25%;
+
+  min-height: 50px;
+
+  font-size: large;
+}
+
+input {
+  width: 100%;
+
+  cursor: text;
+
+  padding: 10px;
+
+  min-height: 5vh;
+
+  font-size: large;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
