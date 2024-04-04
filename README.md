@@ -5,8 +5,8 @@
   - autoplay
 - [x] favicon
 - [x] zmienic `audio = true` w `audio.js`
-- [ ] update vscode screenshot
-- [ ] finish newsletter
+- [x] update vscode screenshot
+- [x] finish newsletter
 
 ### Pages
 
@@ -15,8 +15,8 @@
 
 # Before turn-in
 
-- [ ] FIX @PRINT
-- [ ] VALIDATOR
+- [x] FIX @PRINT
+- [x] VALIDATOR
 
 # Deploy
 
