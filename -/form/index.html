@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Materiały</title>
+    <title>Newsletter</title>
     <link rel="stylesheet" href="/style/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/style/form.css" />
@@ -25,9 +25,10 @@
           <div class="simple-layout">
             <div>
               <div>
-                <form action="google.com">
+                <form action=".">
                   <input
                     class="simple-layout-item"
+                    title="Email"
                     type="email"
                     name="email"
                     id="email"
@@ -40,6 +41,7 @@
                     class="simple-layout-item"
                     type="text"
                     name="imie"
+                    title="Imię"
                     id="imie"
                     placeholder="Jan"
                     required
@@ -50,13 +52,32 @@
                     class="simple-layout-item"
                     type="text"
                     name="nazwisko"
+                    title="Nazwisko"
                     id="nazwisko"
                     placeholder="Kowalski"
                     required
                   />
                   <br />
 
-                  <button class="simple-layout-item" type="reset">
+                  <script>
+                    function handleReset(event) {
+                      // Call the default action (reset the form)
+                      event.currentTarget.form.reset();
+
+                      // Remove parameters from the URL
+                      history.replaceState(
+                        {},
+                        document.title,
+                        window.location.pathname
+                      );
+                    }
+                  </script>
+
+                  <button
+                    class="simple-layout-item"
+                    type="reset"
+                    onclick="handleReset(event)"
+                  >
                     Anuluj
                   </button>
                   <button class="simple-layout-item" type="submit">
@@ -67,7 +88,6 @@
             </div>
           </div>
         </div>
-        <div style="padding-bottom: 300px"></div>
       </main>
       <script src="/src/js/footer.js"></script>
     </div>

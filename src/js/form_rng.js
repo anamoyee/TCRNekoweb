@@ -4,6 +4,17 @@
     return array[randomIndex];
   }
 
+  params = (() => {
+    var params = {};
+    queryString = window.location.search.substring(1);
+    var paramArray = queryString.split("&");
+    for (var i = 0; i < paramArray.length; i++) {
+      var pair = paramArray[i].split("=");
+      params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+    }
+    return params;
+  })();
+
   // ---------------------------------------------------------------- //
 
   let pool = [
@@ -13,6 +24,7 @@
     { email: "jeff.bezos", imie: "Jeffrey", nazwisko: "Bezos" },
     { email: "tom@tomscott.com", imie: "Tom", nazwisko: "Scott" },
     { email: "emmet.brown@aol.com", imie: "Emmet", nazwisko: "Brown" },
+    { email: "colon@gdcolon.com", imie: "Craig", nazwisko: "Kitsune" },
   ];
 
   // ---------------------------------------------------------------- //
@@ -26,6 +38,18 @@
   let INazwisko = document.getElementById("nazwisko");
 
   let C = choice(pool);
+
+  if (params.email) {
+    IEmail.value = params.email;
+  }
+
+  if (params.imie) {
+    IImie.value = params.imie;
+  }
+
+  if (params.nazwisko) {
+    INazwisko.value = params.nazwisko;
+  }
 
   IEmail.placeholder = C.email.indexOf("@") !== -1 ? C.email : `${C.email}@${choice(emails)}`; // prettier-ignore
   IImie.placeholder = C.imie;

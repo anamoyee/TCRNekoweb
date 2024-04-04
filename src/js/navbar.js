@@ -1,4 +1,10 @@
 {
+  titleimg = document.getElementById("titleimg");
+  titleimg.onclick = () => {
+    window.location.href = "/";
+  };
+  titleimg.classList.add("nodrag");
+
   let nav = document.createElement("nav");
 
   let outer_div = document.createElement("div");
@@ -13,7 +19,7 @@
     let div = document.createElement("div");
 
     div.className = "simple-image-item grower";
-    div.id = "navtails1";
+  div.id = "navtails1";
 
     let img = document.createElement("img");
     img.src = "/assets/img/tails.png";
