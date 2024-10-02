@@ -35,9 +35,9 @@
 
 		const navbar_links = [
 			["Home", "/"],
-			// ["ZSE", "https://zse.nekoweb.org"],
 			["Memes", "/gallery"],
 			["Media", "/media"],
+			["IRC", "https://irc.nekoweb.org/"],
 			["Atabook", "https://nya.atabook.org/"],
 		];
 
