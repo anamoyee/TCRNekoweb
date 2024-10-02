@@ -22,7 +22,6 @@
 
 	const subdomain = window.location.hostname.split(".")[0];
 
-	let suffix;
 	let views;
 
 	async function getViews(username) {
@@ -37,14 +36,13 @@
 		if (window.location.host.endsWith("nekoweb.org")) {
 			views = await getViews(subdomain);
 		} else {
-			suffix = " (nie na nekoweb.org)";
 			views = null;
 		}
 
-		views ??= "Nie udało się odczytać liczby";
-
-		footer_span.innerText = `© Copyright Kamil Gondek ZSE 2024-present ⋅ ${views} Odwiedzających${
-			suffix ?? ""
-		}`;
+		if (views) {
+			footer_span.innerText = `${views} visitors`;
+		} else {
+			footer_span.innerHTML = "Unable to load visitors number :c";
+		}
 	})();
 }

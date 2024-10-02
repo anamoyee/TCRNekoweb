@@ -35,9 +35,10 @@
 
 		const navbar_links = [
 			["Home", "/"],
-			["ZSE", "https://zse.nekoweb.org"],
+			// ["ZSE", "https://zse.nekoweb.org"],
 			["Memes", "/gallery"],
 			["Media", "/media"],
+			["Atabook", "https://nya.atabook.org/"],
 		];
 
 		navbar_links.forEach((page) => {

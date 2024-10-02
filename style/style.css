@@ -3,7 +3,6 @@
 @import url(/style/fonts.css);
 @import url(/style/utils.css);
 @import url(/style/shake.css);
-@import url(/style/print.css);
 @import url(/style/media.css);
 @import url(/style/simple_layout.css);
 @import url(/style/utils/navbar.css);
@@ -111,14 +110,6 @@ header > img {
 hr {
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-
-img#fumo {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	margin: 10px;
-	width: 13vw;
 }
 
 .gradientbg,

@@ -48,17 +48,3 @@
    90% { transform: scale(1.2) translate(4px, 4px) rotate(0deg); }
    100% { transform: scale(1.2) translate(4px, -4px) rotate(-3deg); }
 }
-
-#fumo {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	cursor: pointer;
-}
-
-@media (min-height: (100vh - 20px)) {
-	#fumo {
-		position: absolute;
-		bottom: 20px;
-	}
-}
