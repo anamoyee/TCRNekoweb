@@ -1,78 +1,78 @@
 {
-  titleimg = document.getElementById("titleimg");
-  titleimg.onclick = () => {
-    window.location.href = "/";
-  };
-  titleimg.classList.add("nodrag");
+	titleimg = document.getElementById("titleimg");
+	titleimg.onclick = () => {
+		window.location.href = "/";
+	};
+	titleimg.classList.add("nodrag");
 
-  let nav = document.createElement("nav");
+	let nav = document.createElement("nav");
 
-  let outer_div = document.createElement("div");
-  outer_div.appendChild(nav);
+	let outer_div = document.createElement("div");
+	outer_div.appendChild(nav);
 
-  outer_div.style.display = "flex";
-  outer_div.style.flexDirection = "row";
-  outer_div.style.alignItems = "center";
-  outer_div.style.gap = "10px";
+	outer_div.style.display = "flex";
+	outer_div.style.flexDirection = "row";
+	outer_div.style.alignItems = "center";
+	outer_div.style.gap = "10px";
 
-  {
-    let div = document.createElement("div");
+	{
+		let div = document.createElement("div");
 
-    div.className = "simple-image-item grower";
-    div.id = "navtails1";
+		div.className = "simple-image-item grower";
+		div.id = "navtails1";
 
-    let img = document.createElement("img");
-    img.src = "/assets/img/tails.png";
-    img.style.width = "100px";
-    img.style.height = "100px";
-    div.appendChild(img);
+		let img = document.createElement("img");
+		img.src = "/assets/img/tails.png";
+		img.style.width = "100px";
+		img.style.height = "100px";
+		div.appendChild(img);
 
-    outer_div.appendChild(div);
-  }
+		outer_div.appendChild(div);
+	}
 
-  {
-    let div = document.createElement("div");
+	{
+		let div = document.createElement("div");
 
-    const navbar_links = [
-      ["Home", "/"],
-      ["Galeria", "/-/gallery"],
-      ["Materiały", "/-/materialy"],
-      ["Media", "/-/media"],
-    ];
+		const navbar_links = [
+			["Home", "/"],
+			["ZSE", "https://zse.nekoweb.org"],
+			["Memes", "/gallery"],
+			["Media", "/media"],
+		];
 
-    navbar_links.forEach((page) => {
-      const a = document.createElement("a");
-      a.textContent = page[0];
-      a.className = "grower-link";
-      a.href = page[1];
-      div.appendChild(a);
-    });
+		navbar_links.forEach((page) => {
+			const a = document.createElement("a");
+			a.textContent = page[0];
+			a.className = "grower-link";
+			a.href = page[1];
+			div.appendChild(a);
+		});
 
-    div.className = "navdiv simple-layout-item";
-    div.style.display = "flex";
-    div.style.flexWrap = "wrap";
-    div.style.flexGrow = "1";
-    div.style.flexShrink = "100";
+		div.className = "navdiv simple-layout-item";
+		div.style.display = "flex";
+		div.style.flexWrap = "wrap";
+		div.style.flexGrow = "1";
+		div.style.flexShrink = "100";
 
-    outer_div.appendChild(div);
-  }
+		outer_div.appendChild(div);
+	}
 
-  {
-    let div = document.createElement("div");
+	{
+		let div = document.createElement("div");
 
-    div.className = "simple-image-item grower";
-    div.id = "navtails2";
+		div.className = "simple-image-item grower";
+		div.id = "navtails2";
 
-    let img = document.createElement("img");
-    img.src = "/assets/img/tails2.png";
-    img.style.width = "100px";
-    img.style.height = "100px";
-    div.appendChild(img);
-    outer_div.appendChild(div);
-  }
+		let img = document.createElement("img");
+		img.src = "/assets/img/tails2.png";
+		img.style.width = "100px";
+		img.style.height = "100px";
+		div.appendChild(img);
+		outer_div.appendChild(div);
+	}
 
-  outer_div.style.paddingRight = "10px";
+	outer_div.style.paddingRight = "10px";
 
-  const script = document.currentScript;
-  script.parentNode.replaceChild(outer_div, script);
+	const script = document.currentScript;
+	script.parentNode.replaceChild(outer_div, script);
 }

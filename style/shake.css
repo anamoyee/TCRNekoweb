@@ -1,22 +1,22 @@
 .shake:hover {
-  animation: shakeanimation 0.2s;
-  animation-iteration-count: infinite;
+	animation: shakeanimation 0.2s;
+	animation-iteration-count: infinite;
 }
 
 .shake:active {
-  animation: shakeanimation2 0.1s !important;
-  animation-iteration-count: infinite !important;
-  filter: saturate(300%) blur(1.2px) !important;
+	animation: shakeanimation2 0.1s !important;
+	animation-iteration-count: infinite !important;
+	filter: saturate(300%) blur(1.2px) !important;
 }
 
 .nodrag {
-  /* Usuwa wyświetlanie się przeciąganego zdjęcia */
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  -moz-user-drag: none;
-  -moz-user-select: none;
+	/* Usuwa wyświetlanie się przeciąganego zdjęcia */
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-moz-user-drag: none;
+	-moz-user-select: none;
 }
 
 /* prettier-ignore */
@@ -50,15 +50,15 @@
 }
 
 #fumo {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
 }
 
 @media (min-height: (100vh - 20px)) {
-  #fumo {
-    position: absolute;
-    bottom: 20px;
-  }
+	#fumo {
+		position: absolute;
+		bottom: 20px;
+	}
 }

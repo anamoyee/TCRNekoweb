@@ -1,15 +1,15 @@
 {
-  let script = document.currentScript;
-  let previousPreviousQuote;
-  let previousQuote;
+	let script = document.currentScript;
+	let previousPreviousQuote;
+	let previousQuote;
 
-  function choice(array) {
-    const randomIndex = Math.floor(Math.random() * array.length);
-    return array[randomIndex];
-  }
+	function choice(array) {
+		const randomIndex = Math.floor(Math.random() * array.length);
+		return array[randomIndex];
+	}
 
-  // prettier-ignore
-  const quote_pool = [
+	// prettier-ignore
+	const quote_pool = [
     {text: "<a style='text-decoration: none; text-shadow: none;' href='https://irc.nekoweb.org'>https://irc.nekoweb.org</a> Internet Relay cat :3"},
     {text: "tails/senko/basil/θωθ/•ᴗ•/(*´꒳`*)"},
     {text: "Close your eyes you'll be here soon* 一 二 三 四 五分; 時々 本当に寝たい でも このワードできない おやすみ; おやすみ; おやすみ ;おやすみ"},
@@ -34,47 +34,47 @@
     {text: "Privacy is dead enough. We shan't make it more dead that it currently is."},
   ];
 
-  function setTo(q) {
-    let text_span = document.createElement("span");
+	function setTo(q) {
+		let text_span = document.createElement("span");
 
-    // h3.style.fontStyle = "italic";
-    text_span.style.opacity = 0.7;
-    text_span.style.textAlign = "center";
-    text_span.style.fontSize = "25px";
-    text_span.style.width = "100%";
-    text_span.className = "text grower-link clickable-cursor";
-    text_span.id = "quotespan";
+		// h3.style.fontStyle = "italic";
+		text_span.style.opacity = 0.7;
+		text_span.style.textAlign = "center";
+		text_span.style.fontSize = "25px";
+		text_span.style.width = "100%";
+		text_span.className = "text grower-link clickable-cursor";
+		text_span.id = "quotespan";
 
-    previousPreviousQuote = previousQuote ?? choice(quote_pool);
-    previousQuote = q;
+		previousPreviousQuote = previousQuote ?? choice(quote_pool);
+		previousQuote = q;
 
-    if (q.author) {
-      text_span.innerHTML = `"<i>${q.text}</i> " ~ ${q.author}`;
-    } else {
-      text_span.innerHTML = `"<i>${q.text}</i> "`;
-    }
+		if (q.author) {
+			text_span.innerHTML = `"<i>${q.text}</i> " ~ ${q.author}`;
+		} else {
+			text_span.innerHTML = `"<i>${q.text}</i> "`;
+		}
 
-    let div = document.createElement("div");
-    div.appendChild(text_span);
-    div.className = "full-width";
-    div.style.width = "100%";
-    div.onclick = reroll;
-    div.addEventListener("contextmenu", (event) => {
-      event.preventDefault();
-      back();
-    });
+		let div = document.createElement("div");
+		div.appendChild(text_span);
+		div.className = "full-width";
+		div.style.width = "100%";
+		div.onclick = reroll;
+		div.addEventListener("contextmenu", (event) => {
+			event.preventDefault();
+			back();
+		});
 
-    script.parentNode.replaceChild(div, script);
-    script = div;
-  }
+		script.parentNode.replaceChild(div, script);
+		script = div;
+	}
 
-  function reroll(p) {
-    setTo(choice(quote_pool));
-  }
+	function reroll(p) {
+		setTo(choice(quote_pool));
+	}
 
-  function back() {
-    setTo(previousPreviousQuote);
-  }
+	function back() {
+		setTo(previousPreviousQuote);
+	}
 
-  reroll();
+	reroll();
 }

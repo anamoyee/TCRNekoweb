@@ -1,18 +1,18 @@
 div:has(.navdiv) {
-  padding: 5px;
+	padding: 5px;
 }
 
 .navdiv {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .navdiv a {
-  font-weight: bolder;
-  text-decoration: none;
-  text-shadow: 2px 2px var(--color-secondary);
-  font-size: 23px;
+	font-weight: bolder;
+	text-decoration: none;
+	text-shadow: 2px 2px var(--color-secondary);
+	font-size: 23px;
 }

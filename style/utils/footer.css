@@ -1,12 +1,12 @@
 #outerfooterdiv {
-  padding: 10px;
-  /* background-color: red; */
-  width: 100%;
-  padding: 10px;
-  text-align: center;
+	padding: 10px;
+	/* background-color: red; */
+	width: 100%;
+	padding: 10px;
+	text-align: center;
 }
 
 #footercopy {
-  font-weight: bolder;
-  text-shadow: black 0.5px 0.5px;
+	font-weight: bolder;
+	text-shadow: black 0.5px 0.5px;
 }

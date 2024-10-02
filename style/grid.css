@@ -1,15 +1,15 @@
 .content-grid {
-  --padding-inline: 1rem;
-  --content-max-width: 1100px;
-  --breakout-max-width: 1400px;
+	--padding-inline: 1rem;
+	--content-max-width: 1100px;
+	--breakout-max-width: 1400px;
 
-  --breakout-size: calc(
-    (var(--breakout-max-width) - var(--content-max-width)) / 2
-  );
+	--breakout-size: calc(
+		(var(--breakout-max-width) - var(--content-max-width)) / 2
+	);
 
-  display: grid;
-  /* prettier-ignore */
-  grid-template-columns:
+	display: grid;
+	/* prettier-ignore */
+	grid-template-columns:
     [full-width-start]
       minmax(var(--padding-inline), 1fr)
       [breakout-start]
@@ -28,21 +28,21 @@
 
 .content-grid > :not(.breakout, .full-width),
 .full-width > :not(.breakout, .full-width) {
-  grid-column: content;
+	grid-column: content;
 }
 
 .content-grid > .breakout {
-  grid-column: breakout;
+	grid-column: breakout;
 }
 
 .content-grid > .full-width {
-  grid-column: full-width;
-  display: grid;
-  grid-template-columns: inherit;
+	grid-column: full-width;
+	display: grid;
+	grid-template-columns: inherit;
 }
 
 img.full-width {
-  width: 100%;
-  max-height: 45vh;
-  object-fit: cover;
+	width: 100%;
+	max-height: 45vh;
+	object-fit: cover;
 }

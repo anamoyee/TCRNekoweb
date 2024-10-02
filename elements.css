@@ -1,49 +1,42 @@
 /*
-
-
-  ! Uwaga:
-
-  * elements.css (i folder elements) służą do wyświetlania ramki na stronie hostingu nekoweb.org
-  * Jest to opcjonalna funkcja, raczej nie będzie oceniana ale postanowiłem, że dodam. 
-
-
-
-*/
+ * elements.css (i folder elements) służą do wyświetlania ramki na stronie hostingu nekoweb.org
+ * Jest to opcjonalna funkcja, raczej nie będzie oceniana ale postanowiłem, że dodam. 
+**/
 
 .site-box {
-  text-align: center;
-  background-image: url(https://zse.nekoweb.org/elements/sonic_tails.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 18px;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
-  font-weight: bold;
+	text-align: center;
+	background-image: url(https://zse.nekoweb.org/elements/sonic_tails.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: transform 0.3s ease;
+	font-weight: bold;
 }
 
 .site-box::after {
-  content: url(https://zse.nekoweb.org/elements/tails1.png);
-  transform: scale(0.63);
-  position: relative;
-  bottom: 243px;
-  left: 100px;
-  pointer-events: none;
-  display: block;
+	content: url(https://zse.nekoweb.org/elements/tails1.png);
+	transform: scale(0.63);
+	position: relative;
+	bottom: 243px;
+	left: 100px;
+	pointer-events: none;
+	display: block;
 }
 
-.site-box:hover{transform: scale(0.98)}
+.site-box:hover {
+	transform: scale(0.98);
+}
 
 .site-box > a > p {
-  color: #ffffff;
-  text-shadow: 1px 1px #000;
+	color: #ffffff;
+	text-shadow: 1px 1px #000;
 }
 .site-box > a > span {
-  color: #ffffff;
-  text-shadow: 1px 1px #000;
+	color: #ffffff;
+	text-shadow: 1px 1px #000;
 }
 
 .site-box > a > div {
-  opacity: 0;
+	opacity: 0;
 }
-
-/* UwU */

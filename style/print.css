@@ -1,63 +1,63 @@
 @media print {
-  /* Reset styles to default layout for printing */
-  .simple-layout:not(.simple-layout .simple-layout) {
-    flex-direction: row;
-  }
+	/* Reset styles to default layout for printing */
+	.simple-layout:not(.simple-layout .simple-layout) {
+		flex-direction: row;
+	}
 
-  .simple-layout:not(.simple-layout .simple-layout) > div {
-    width: initial;
-  }
+	.simple-layout:not(.simple-layout .simple-layout) > div {
+		width: initial;
+	}
 
-  /* body{
+	/* body{
     filter: grayscale(100%)
   } /* W celu zapobiegnięcia marnowania kolorowego tuszu do drukowania */
 
-  .grower:hover,
-  .grower:active,
-  .grower-small:hover,
-  .grower-small:active,
-  .grower-x-small:hover,
-  .grower-x-small:active,
-  .grower-link:hover,
-  .grower-link:active {
-    transform: none !important; /* Usuwa efekty najechania kursorem lub klikniecia podczas drukowania */
-  }
+	.grower:hover,
+	.grower:active,
+	.grower-small:hover,
+	.grower-small:active,
+	.grower-x-small:hover,
+	.grower-x-small:active,
+	.grower-link:hover,
+	.grower-link:active {
+		transform: none !important; /* Usuwa efekty najechania kursorem lub klikniecia podczas drukowania */
+	}
 
-  #fumo {
-    display: none; /* Usuwa fumo z dolnego-prawego rogu */
-  }
+	#fumo {
+		display: none; /* Usuwa fumo z dolnego-prawego rogu */
+	}
 
-  .rainbowbg,
-  .gradientbg {
-    visibility: none;
-  }
+	.rainbowbg,
+	.gradientbg {
+		visibility: none;
+	}
 
-  html {
-    color-scheme: light;
-  }
+	html {
+		color-scheme: light;
+	}
 
-  /* p, .text, .text *, h1, h2, h3, h4, h5, h6, */
-  * {
-    text-shadow: none !important;
-    box-shadow: none !important;
-    color: black !important;
-  }
+	/* p, .text, .text *, h1, h2, h3, h4, h5, h6, */
+	* {
+		text-shadow: none !important;
+		box-shadow: none !important;
+		color: black !important;
+	}
 
-  .gradientbg,
-  .gradientbg2,
-  .gradientbg3 {
-    background: white !important;
-  }
+	.gradientbg,
+	.gradientbg2,
+	.gradientbg3 {
+		background: white !important;
+	}
 
-  footer {
-    margin-top: 15px;
-  }
+	footer {
+		margin-top: 15px;
+	}
 
-  #smhjustuserecursion {
-    display: none;
-  }
+	#smhjustuserecursion {
+		display: none;
+	}
 
-  #smallvscodelogo {
-    display: none;
-  }
+	#smallvscodelogo {
+		display: none;
+	}
 }

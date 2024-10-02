@@ -1,89 +1,89 @@
 :root {
-  --simple-layout-gap: 15px;
+	--simple-layout-gap: 15px;
 }
 
 .simple-layout {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 
-  gap: var(--simple-layout-gap);
+	gap: var(--simple-layout-gap);
 }
 
 .simple-layout > div {
-  width: 100%;
+	width: 100%;
 }
 
 .simple-layout > div > div:last-child,
 .simple-layout > div > a:last-child > div {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .simple-layout {
-  margin-bottom: var(--simple-layout-gap);
+	margin-bottom: var(--simple-layout-gap);
 }
 
 .simple-layout > div > div,
 .simple-layout > div > a > div {
-  margin-bottom: var(--simple-layout-gap);
-  padding-left: 3%;
-  padding-right: 3%;
-  break-inside: avoid-page; /* Nie ucinaj elementów na inne strony podczas drukowania */
+	margin-bottom: var(--simple-layout-gap);
+	padding-left: 3%;
+	padding-right: 3%;
+	break-inside: avoid-page; /* Nie ucinaj elementów na inne strony podczas drukowania */
 }
 
 .simple-layout > div > a:has(div) {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 .sl-padding {
-  padding-top: 3%;
-  padding-bottom: 3%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 
 .no-sl-padding {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 
 .simple-layout:not(.sl-invisible) > div > div,
 .simple-layout:not(.sl-invisible) > div > a > div,
 .simple-layout-item {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 
-  border-radius: var(--roundedness);
+	border-radius: var(--roundedness);
 
-  border: var(--color-secondary) 3px solid;
+	border: var(--color-secondary) 3px solid;
 
-  background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .simple-image-item {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 3px var(--color-secondary) solid;
-  border-radius: var(--roundedness);
-  overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 3px var(--color-secondary) solid;
+	border-radius: var(--roundedness);
+	overflow: hidden;
 }
 
 .simple-image-item img {
-  width: 100%;
-  height: auto;
-  display: block;
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 @media screen and (max-width: 1000px), (orientation: portrait) {
-  .simple-layout:not(.simple-layout .simple-layout) {
-    flex-direction: column;
-  }
+	.simple-layout:not(.simple-layout .simple-layout) {
+		flex-direction: column;
+	}
 
-  .simple-layout:not(.simple-layout .simple-layout) > div {
-    width: auto;
-  }
+	.simple-layout:not(.simple-layout .simple-layout) > div {
+		width: auto;
+	}
 }
 
 .simple-layout-single-column.simple-layout {
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .simple-layout-single-column.simple-layout > div {
-  width: auto;
+	width: auto;
 }
